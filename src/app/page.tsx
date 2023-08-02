@@ -10,7 +10,6 @@ export default function Home() {
             Full English Finder
           </h1>
           <h2>Find yourself a proper Full English!</h2>
-          <Link href="/api/auth/login">Login </Link>
         </div>
       </main>
     </div>
