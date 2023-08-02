@@ -10,6 +10,7 @@ import {
   HomeIcon,
   UserPlusIcon,
 } from "@heroicons/react/24/outline";
+import { AuthMenu } from "./AuthMenu";
 
 const solutions = [
   {
@@ -110,22 +111,7 @@ export function Menu() {
                 </nav>
               </div>
             </div>
-            <div className="px-5 py-6 space-y-6">
-              <div>
-                <Link
-                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
-                  href="/register"
-                >
-                  Sign up
-                </Link>
-                <p className="mt-6 text-base font-medium text-center text-gray-500">
-                  Existing customer?{" "}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
-                  </a>
-                </p>
-              </div>
-            </div>
+            <AuthMenu />
           </div>
         </Popover.Panel>
       </Transition>

@@ -1,3 +1,4 @@
+import { UserProvider } from "@auth0/nextjs-auth0/client";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { Menu } from "../components/Menu/Menu";
@@ -17,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Menu />
-        {children}
+        <UserProvider>
+          <Menu />
+          {children}
+        </UserProvider>
       </body>
     </html>
   );

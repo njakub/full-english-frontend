@@ -23,6 +23,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
+    "@auth0/nextjs-auth0": "^3.0.1",
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
     "@types/lodash": "^4.14.196",

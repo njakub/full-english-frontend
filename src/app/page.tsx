@@ -9,7 +9,8 @@ export default function Home() {
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             Full English Finder
           </h1>
-          <h3>Find yourself a proper Full English!</h3>
+          <h2>Find yourself a proper Full English!</h2>
+          <Link href="/api/auth/login">Login </Link>
         </div>
       </main>
     </div>
